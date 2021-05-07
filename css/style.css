@@ -1,0 +1,183 @@
+body {
+    background: radial-gradient(circle, #fff, #ccc);
+    background: -webkit-radial-gradient(circle, #fff, #ccc);
+    background: -o-radial-gradient(circle, #fff, #ccc);
+    background: -moz-radial-gradient(circle, #fff, #ccc);
+    height: 100%;
+}
+
+.container {
+    height: 415px;
+    width: 550px;
+    background-color: #9DD2EA;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+    /*h-offset(right- 0px and left-0px )
+    and v-ofset (below-4px and above-0px)*/
+    padding: 20px;
+    position: relative;
+}
+
+#score {
+    background-color: #F1FF92;
+    position: absolute;
+    padding: 11px;
+    left: 478px;
+    box-shadow: 0px 4px 0px #9da853;
+    -moz-box-shadow: 0px 4px 0px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px 0px #9da853;
+}
+
+#correct {
+    position: absolute;
+    left: 260px;
+    padding: 11px;
+    background-color: #238f43;
+    color: white;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 250px;
+    padding: 11px;
+    background-color: #be1725;
+    color: white;
+    display: none;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #9DA0EA;
+    box-shadow: 0px 4px #565daa;
+    -moz-box-shadow: 0px 4px 0px 0px #565daa;
+    -webkit-box-shadow: 0px 4px 0px 0px #565daa;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive, sans-serif;
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0px 4px #7b4fa1;
+    -moz-box-shadow: 0px 4px 0px 0px #7b4fa1;
+    -webkit-box-shadow: 0px 4px 0px 0px #7b4fa1;
+    background-color: #b481d9;
+    margin: 10px auto;
+    line-height: 45px;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 6px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: rgb(250, 236, 250);
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgb(128, 115, 128);
+    -moz-box-shadow: 0px 4px rgb(128, 115, 128);
+    -webkit-box-shadow: 0px 4px rgb(128, 115, 128);
+    text-align: center;
+    line-height: 80px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.box:hover,
+#startreset:hover {
+    color: white;
+    background-color: #745dda;
+    box-shadow: 0px 4px #382d68;
+    -moz-box-shadow: 0px 4px 0px 0px #382d68;
+    -webkit-box-shadow: 0px 4px 0px 0px #382d68;
+}
+
+.box:active,
+#startreset:active {
+    top: 4px;
+    box-shadow: 0px 0px #745dda;
+    -moz-box-shadow: 0px 4px 0px 0px #745dda;
+    -webkit-box-shadow: 0px 4px 0px 0px #745dda;
+    ;
+}
+
+#box4 {
+    margin-right: 0px;
+}
+
+#startreset {
+    width: 85px;
+    padding: 10px;
+    background-color: rgba(255, 210, 255, 0.5);
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgb(128, 115, 128);
+    -moz-box-shadow: 0px 4px rgb(128, 115, 128);
+    -webkit-box-shadow: 0px 4px rgb(128, 115, 128);
+    text-align: center;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+#timeremaining {
+    width: 152px;
+    padding: 10px;
+    position: absolute;
+    top: 396px;
+    left: 400px;
+    background-color: rgba(180, 231, 39, 1.87);
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgb(165, 168, 152, 1.8);
+    -moz-box-shadow: 0px 4px rgb(165, 168, 152, 1.8);
+    -webkit-box-shadow: 0px 4px rgb(165, 168, 152, 1.8);
+    text-align: center;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    display: none;
+}
+
+#gameover {
+    width: 500px;
+    height: 272px;
+    margin: 70px auto 10px auto;
+    background: linear-gradient(#e43db2, #c16fd1);
+    background: -webkit-linear-gradient(#e43db2, #c16fd1);
+    background: -o-linear-gradient(#e43db2, #c16fd1);
+    background: -moz-linear-gradient(#e43db2, #c16fd1);
+    position: absolute;
+    top: 19px;
+    left: 48px;
+    text-align: center;
+    font-size: 2em;
+    z-index: 2;
+    text-transform: uppercase;
+    color: white;
+    display: none;
+}
